@@ -27,9 +27,11 @@ public class XRSocketKnifeInteractor : XRSocketInteractor
 
     void onCollide(Collider collider)
     {
-        if (Singleton.instance.isRightHandInteracting)
-        {
-            if (isSelectActive)
+        //if (Singleton.instance.isRightHandInteracting)
+        //{
+        Debug.Log("Collided");
+
+        if (isSelectActive)
             {
                 IXRSelectInteractable objName = this.GetOldestInteractableSelected();
                 if (objName != null) 
@@ -50,7 +52,7 @@ public class XRSocketKnifeInteractor : XRSocketInteractor
 
             }
 
-        }
+        //}
     }
 
     

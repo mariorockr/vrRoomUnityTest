@@ -36,7 +36,12 @@ public class Singleton : MonoBehaviour
     }
 
     public void Update()
+
+        
     {
+
+        
+
         if (leftPinch.action.ReadValue<float>() > 0 || leftGrip.action.ReadValue<float>() > 0)
         {
             isLeftHandInteracting = true;
